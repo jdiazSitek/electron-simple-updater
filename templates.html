@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/form.css">
+
+  <title>Hello World!</title>
+</head>
+
+<body>
+  <div class="col-md-6" id="template_form">
+      <div class="form-group">
+        <label for="Escaner">Numero </label>
+        <input type="text" class="form-control" id="part_number" placeholder="Numero de Parte">
+      </div>
+      <div class="form-group">
+        <label for="work_order">Orden de Trabajo</label>
+        <input type="text" class="form-control" id="work_order" placeholder="Orden de Trabajo">
+      </div>
+      <button type="submit" class="btn btn-success" id="print" onclick="getData(event)">Imprimir</button>
+  </div>
+
+
+  <footer>
+    <p>&copy; 2017 - Kaman</p>
+  </footer>
+</body>
+
+<script>  
+  //require('./renderer.js')
+</script>
+<script src="./js/index.js"></script>
+<script src="./js/menu.js"></script>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/form.css">
+
+  <title>Kaman-Videojet</title>
+</head>
+
+<body>
+  <span id="connection_msg" class="label"></span>
+  <div class="col-md-7 col-md-offset-2" id="print_form">
+    <div class="form-group">
+      <label for="template">Template</label>
+      <select class="form-control" id="template" onchange="getTemplate(this)">
+        <option value="N/A">- Seleccionar -</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Escaner">Escaner</label>
+      <input type="text" class="form-control" id="part_number" onkeypress="inputEnter(event)">
+    </div>
+    <div class="form-group">
+      <label for="work_order">Orden de Trabajo</label>
+      <input type="text" class="form-control" id="work_order" onkeypress="inputEnter(event)">
+    </div>
+
+    <hr class="half-rule"/>
+    <div class="form-group">
+      <label for="output">Output</label>
+      <textarea class="form-control" rows="5" id="output"></textarea>
+    </div>
+
+    <button class="btn btn-success" id="print" onclick="print(event)" disabled>Imprimir</button>
+    <center><img id="spinner" src="./img/loading_spinner.gif" alt="Loading" height="100" width="100" align="middle" hidden></center>
+  </div>
+  
+
+  <footer>
+    <p>&copy; 2017 - Kaman</p>
+  </footer>
+</body>
+
+<script>
+  //require('./renderer.js')
+
+</script>
+<script src="./js/index.js"></script>
+<script>window.$ = window.jQuery = require('jquery');</script>
+
+</html>

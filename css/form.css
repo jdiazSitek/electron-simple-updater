@@ -1,0 +1,25 @@
+input, select{
+    height: 50px !important;
+    font-size: 20px !important;
+ }
+ button{
+ 	height: 50px;
+ 	font-size: 20px !important;
+ 	width: 100%;
+ }
+ label{
+ 	font-size: 15px !important;
+ }
+ #print_form{
+     padding: 50px;
+ }
+ .half-rule { 
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+	border-top: 2px solid #eee;
+ }
+ select{
+	 color: #000 !important;
+    background-color: #A9D0F5 !important;
+ }

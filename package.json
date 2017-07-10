@@ -1,0 +1,38 @@
+{
+  "name": "kvideojet",
+  "version": "1.0.1",
+  "description": "A minimal Electron application with node serialport",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "install": "electron-rebuild",
+    "packaging": "del kvideojet-win32-x64\\templates && electron-packager . kvideojet --icon=./img/videojet_v.ico --overwrite && mkdir kvideojet-win32-x64\\templates",
+    "packaging32": "del kvideojet-win32-ia32\\templates && electron-packager . kvideojet --icon=./img/videojet_v.ico --overwrite --platform=win32 --arch=ia32 && mkdir kvideojet-win32-ia32\\templates",
+    "create-installer-win": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:johnny-five-io/electron-serialport.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-rebuild": "^1.4.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-winstaller": "^2.6.3"
+  },
+  "dependencies": {
+    "data-table": "^2.0.0",
+    "jquery": "^3.2.1",
+    "serial-node": "0.0.10",
+    "serialport": "^4.0.7"
+  }
+}
